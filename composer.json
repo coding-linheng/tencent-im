@@ -1,0 +1,21 @@
+{
+    "name": "codelin/tencent-im",
+    "description": "Tencent IM Service api",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Codelin\\TencentIm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "codelin",
+            "email": "49402937@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0"
+    }
+}
