@@ -12,13 +12,30 @@ use Codelin\TencentIm\Http;
  */
 class TencentImService
 {
-    private $baseUrl = "https://console.tim.qq.com/v4/";
-    private $appid = '1400537488';
-    protected $secret = "8d8ee764d3f217e626eabed210ab49a4b7b42ef685cb366bd3fc6c6bb3b3a31c";
-    private $identifier = 'administrator';
-    private $contenttype = 'json';
+    private $baseUrl;
+    private $appid;
+    private $secret;
+    private $identifier;
+    private $contenttype;
     private $userSig = null;
 
+
+    /**
+     * TencentImService constructor.
+     * @param string $appid IM appid
+     * @param string $secret im secrect
+     * @param string $identifier IM后台管理员名称
+     * @param string $baseUrl im请求地址前缀
+     * @param string $contenttype 接收参数类型
+     */
+    public function __construct($appid, $secret, $identifier, $baseUrl = "", $contenttype = "json")
+    {
+        $this->baseUrl     = $baseUrl ?: "https://console.tim.qq.com/v4/";
+        $this->appid       = $appid;
+        $this->secret      = $secret;
+        $this->identifier  = $identifier;
+        $this->contenttype = $contenttype;
+    }
 
     /**
      * @param $url
