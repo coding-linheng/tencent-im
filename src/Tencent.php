@@ -1,6 +1,6 @@
 <?php
 
-namespace TencentIm;
+namespace Codelin\TencentIm;
 
 if (version_compare(PHP_VERSION, '5.1.2') < 0) {
     trigger_error('need php 5.1.2 or newer', E_USER_ERROR);

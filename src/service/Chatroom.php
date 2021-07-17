@@ -1,6 +1,6 @@
 <?php
 
-namespace TencentIm\service;
+namespace Codelin\TencentIm\service;
 
 
 /**
