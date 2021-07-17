@@ -1,6 +1,6 @@
 <?php
 
-namespace TencentIm;
+namespace Codelin\TencentIm;
 
 /**
  * Http 请求类

@@ -1,9 +1,9 @@
 <?php
 
-namespace TencentIm\service;
+namespace Codelin\TencentIm\service;
 
-use TencentIm\Tencent;
-use TencentIm\Http;
+use Codelin\TencentIm\Tencent;
+use Codelin\TencentIm\Http;
 
 /**
  * 腾讯IM相关请求
